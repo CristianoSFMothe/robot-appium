@@ -11,3 +11,6 @@ Cenário: Acessar Aplicativo
     Click In Button Cancel
     Click In Lest Go
     Select Interest       Technology
+    Select Looking For    Professional growth
+    Skip Sing In          Skip this for now 
+    View Home

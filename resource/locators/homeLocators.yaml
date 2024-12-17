@@ -1,0 +1,6 @@
+home:
+  homeScreen: HomeScreen
+  homeButton: BottomTab_Home
+  discoverButton: BottomTab_Discover
+  myLibraryButton: BottomTab_MyLibrary
+  podcastButton: BottomTab_Podcasts

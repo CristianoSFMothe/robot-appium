@@ -1,0 +1,3 @@
+signIn:
+  # skipButton: SkipSignInLink
+  skipButton: //android.widget.TextView[@resource-id="Typography" and @text="{text}"]
