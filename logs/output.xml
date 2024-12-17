@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.7 on win32)" generated="2024-12-17T09:09:42.715476" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.7 on win32)" generated="2024-12-17T09:22:50.379729" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Appium" source="D:\robot-appium">
 <suite id="s1-s1" name="Tests" source="D:\robot-appium\tests">
 <suite id="s1-s1-s1" name="TED" source="D:\robot-appium\tests\TED.robot">
-<test id="s1-s1-s1-t1" name="Cenário: Acessar Aplicativo" line="6">
-<kw name="Open TED App" owner="openApp">
+<test id="s1-s1-s1-t1" name="Cenário: Acessar Aplicativo" line="9">
+<kw name="Open TED App" owner="openApp" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>remote_url=http://localhost:4723/wd/hub</arg>
 <arg>platformName=android</arg>
 <arg>deviceName=UIAutomator2</arg>
 <arg>automationName=UIAutomator2</arg>
 <arg>deviceName=Pixel 4</arg>
-<arg>app=D:\\robot-appium\\resouce\\utils${/}..${/}app${/}app.apk</arg>
+<arg>app=D:\\robot-appium\\resource\\utils${/}..${/}app${/}app.apk</arg>
 <arg>disableIdLocatorAutocompletion=${True}</arg>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
@@ -20,17 +20,54 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-12-17T09:09:42.968860" elapsed="12.698129"/>
+<status status="PASS" start="2024-12-17T09:22:50.618701" elapsed="7.155040"/>
 </kw>
-<status status="PASS" start="2024-12-17T09:09:42.968860" elapsed="12.699638"/>
+<status status="PASS" start="2024-12-17T09:22:50.618701" elapsed="7.155040"/>
 </kw>
-<status status="PASS" start="2024-12-17T09:09:42.967356" elapsed="12.701142"/>
+<kw name="Click In Button Cancel" owner="welcomePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-12-17T09:23:00.758331" level="INFO">criteria is android:id/button2
+criteria is android:id/button2</msg>
+<arg>${welcome.cancelButton}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-12-17T09:22:57.776259" elapsed="2.982072"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-17T09:23:00.759329" level="INFO">Clicking element 'android:id/button2'.</msg>
+<msg time="2024-12-17T09:23:00.819044" level="INFO">criteria is android:id/button2</msg>
+<arg>${welcome.cancelButton}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-17T09:23:00.758331" elapsed="0.060713"/>
+</kw>
+<status status="PASS" start="2024-12-17T09:22:57.775251" elapsed="3.043793"/>
+</kw>
+<kw name="Click In Lest Go" owner="welcomePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-12-17T09:23:01.353639" level="INFO">criteria is Next</msg>
+<arg>${welcome.nextButton}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-12-17T09:23:00.819044" elapsed="0.534595"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-17T09:23:01.355709" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2024-12-17T09:23:01.408557" level="INFO">criteria is Next</msg>
+<arg>${welcome.nextButton}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-17T09:23:01.354710" elapsed="0.053847"/>
+</kw>
+<status status="PASS" start="2024-12-17T09:23:00.819044" elapsed="0.589513"/>
+</kw>
+<kw name="Close All Applications" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes all open applications.</doc>
+<status status="PASS" start="2024-12-17T09:23:01.409556" elapsed="0.407858"/>
+</kw>
+<status status="PASS" start="2024-12-17T09:22:50.617797" elapsed="11.200615"/>
 </test>
-<status status="PASS" start="2024-12-17T09:09:42.766785" elapsed="12.902723"/>
+<status status="PASS" start="2024-12-17T09:22:50.427960" elapsed="11.391452"/>
 </suite>
-<status status="PASS" start="2024-12-17T09:09:42.764812" elapsed="12.905700"/>
+<status status="PASS" start="2024-12-17T09:22:50.426873" elapsed="11.394044"/>
 </suite>
-<status status="PASS" start="2024-12-17T09:09:42.728030" elapsed="12.943484"/>
+<status status="PASS" start="2024-12-17T09:22:50.390894" elapsed="11.432032"/>
 </suite>
 <statistics>
 <total>

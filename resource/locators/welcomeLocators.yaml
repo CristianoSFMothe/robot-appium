@@ -1,0 +1,3 @@
+welcome:
+  cancelButton: android:id/button2
+  nextButton: Next

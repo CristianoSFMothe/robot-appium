@@ -2,7 +2,11 @@
 
 Resource    ../base.resource
 
+Test Setup        Open TED App
+Test Teardown     Close All Applications
+
 *** Test Cases ***
 Cenário: Acessar Aplicativo
-
-    Open TED App
+    
+    Click In Button Cancel
+    Click In Lest Go
