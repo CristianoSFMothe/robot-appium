@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.7 on win32)" generated="2024-12-17T09:09:42.715476" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Appium" source="D:\robot-appium">
+<suite id="s1-s1" name="Tests" source="D:\robot-appium\tests">
+<suite id="s1-s1-s1" name="TED" source="D:\robot-appium\tests\TED.robot">
+<test id="s1-s1-s1-t1" name="Cenário: Acessar Aplicativo" line="6">
+<kw name="Open TED App" owner="openApp">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=http://localhost:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=UIAutomator2</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>deviceName=Pixel 4</arg>
+<arg>app=D:\\robot-appium\\resouce\\utils${/}..${/}app${/}app.apk</arg>
+<arg>disableIdLocatorAutocompletion=${True}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-17T09:09:42.968860" elapsed="12.698129"/>
+</kw>
+<status status="PASS" start="2024-12-17T09:09:42.968860" elapsed="12.699638"/>
+</kw>
+<status status="PASS" start="2024-12-17T09:09:42.967356" elapsed="12.701142"/>
+</test>
+<status status="PASS" start="2024-12-17T09:09:42.766785" elapsed="12.902723"/>
+</suite>
+<status status="PASS" start="2024-12-17T09:09:42.764812" elapsed="12.905700"/>
+</suite>
+<status status="PASS" start="2024-12-17T09:09:42.728030" elapsed="12.943484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot-Appium">Robot-Appium</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Robot-Appium.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TED">Robot-Appium.Tests.TED</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
