@@ -7,7 +7,7 @@ Open TED App
 
     Open Application
     ...    remote_url=http://localhost:4723/wd/hub
-    ...    platformName=android
+    ...    platformName=${PLATFORM_NAME}
     ...    deviceName=UIAutomator2  
     ...    automationName=UIAutomator2
     ...    deviceName=Pixel 4

@@ -10,3 +10,4 @@ Cenário: Acessar Aplicativo
     
     Click In Button Cancel
     Click In Lest Go
+    Select Interest       Technology
