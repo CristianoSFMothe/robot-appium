@@ -13,4 +13,14 @@ Wait Until Element Is Enabled
         Exit For Loop If    ${status}
     END
 
-    
+Wait Visible And Click Element
+    [Arguments]       ${locator}
+
+    Wait Until Element Is Visible    ${locator}
+    Click Element                    ${locator}      
+
+Wait Enabled And Click Element
+    [Arguments]      ${locator}
+
+    Wait Until Element Is Enabled    ${locator}
+    Click Element                    ${locator}    

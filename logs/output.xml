@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.7 on win32)" generated="2024-12-17T10:21:20.435824" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot-Appium" source="D:\robot-appium">
-<suite id="s1-s1" name="Tests" source="D:\robot-appium\tests">
-<suite id="s1-s1-s1" name="TED" source="D:\robot-appium\tests\TED.robot">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-31T21:13:15.583749" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Appium" source="D:\GitHub\robot-appium">
+<suite id="s1-s1" name="Tests" source="D:\GitHub\robot-appium\tests">
+<suite id="s1-s1-s1" name="TED" source="D:\GitHub\robot-appium\tests\TED.robot">
 <test id="s1-s1-s1-t1" name="Cenário: Acessar Aplicativo" line="9">
 <kw name="Open TED App" owner="openApp" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -10,8 +10,8 @@
 <arg>platformName=${PLATFORM_NAME}</arg>
 <arg>deviceName=UIAutomator2</arg>
 <arg>automationName=UIAutomator2</arg>
-<arg>deviceName=Pixel 4</arg>
-<arg>app=D:\\robot-appium\\resource\\utils${/}..${/}app${/}app.apk</arg>
+<arg>deviceName=Phone API 35</arg>
+<arg>app=D:\\GitHub\\robot-appium\\resource\\utils${/}..${/}app${/}app.apk</arg>
 <arg>disableIdLocatorAutocompletion=${True}</arg>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
@@ -20,194 +20,224 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-12-17T10:21:20.689753" elapsed="7.236120"/>
+<status status="PASS" start="2025-01-31T21:13:15.908946" elapsed="11.376640"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:20.689753" elapsed="7.236120"/>
+<status status="PASS" start="2025-01-31T21:13:15.908143" elapsed="11.377729"/>
 </kw>
 <kw name="Click In Button Cancel" owner="welcomePage">
+<kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:30.805963" level="INFO">criteria is android:id/button2
+<msg time="2025-01-31T21:13:31.594981" level="INFO">criteria is android:id/button2
+criteria is android:id/button2
+criteria is android:id/button2
 criteria is android:id/button2
 criteria is android:id/button2</msg>
-<arg>${welcome.cancelButton}</arg>
+<arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-12-17T10:21:27.935956" elapsed="2.870007"/>
+<status status="PASS" start="2025-01-31T21:13:27.289145" elapsed="4.305984"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:30.807969" level="INFO">Clicking element 'android:id/button2'.</msg>
-<msg time="2024-12-17T10:21:30.888301" level="INFO">criteria is android:id/button2</msg>
-<arg>${welcome.cancelButton}</arg>
+<msg time="2025-01-31T21:13:31.597482" level="INFO">Clicking element 'android:id/button2'.</msg>
+<msg time="2025-01-31T21:13:31.719134" level="INFO">criteria is android:id/button2</msg>
+<arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:30.805963" elapsed="0.082338"/>
+<status status="PASS" start="2025-01-31T21:13:31.595557" elapsed="0.123714"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:27.934399" elapsed="2.953902"/>
+<arg>${welcome.cancelButton}</arg>
+<status status="PASS" start="2025-01-31T21:13:27.287744" elapsed="4.431695"/>
+</kw>
+<status status="PASS" start="2025-01-31T21:13:27.287067" elapsed="4.432461"/>
 </kw>
 <kw name="Click In Lest Go" owner="welcomePage">
+<kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:31.435925" level="INFO">criteria is Next</msg>
-<arg>${welcome.nextButton}</arg>
+<msg time="2025-01-31T21:13:32.304496" level="INFO">criteria is Next</msg>
+<arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-12-17T10:21:30.889814" elapsed="0.547117"/>
+<status status="PASS" start="2025-01-31T21:13:31.721229" elapsed="0.583380"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:31.437958" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2024-12-17T10:21:31.487400" level="INFO">criteria is Next</msg>
-<arg>${welcome.nextButton}</arg>
+<msg time="2025-01-31T21:13:32.306453" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-01-31T21:13:32.439801" level="INFO">criteria is Next</msg>
+<arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:31.436931" elapsed="0.051469"/>
+<status status="PASS" start="2025-01-31T21:13:32.304805" elapsed="0.135147"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:30.888807" elapsed="0.599593"/>
+<arg>${welcome.nextButton}</arg>
+<status status="PASS" start="2025-01-31T21:13:31.720418" elapsed="0.719682"/>
+</kw>
+<status status="PASS" start="2025-01-31T21:13:31.720030" elapsed="0.720153"/>
 </kw>
 <kw name="Select Interest" owner="interestPage">
+<kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:32.907038" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<arg>${interest.${PLATFORM_NAME}.interestList.format(text='${interestName}')}</arg>
+<msg time="2025-01-31T21:13:34.047728" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-12-17T10:21:31.488400" elapsed="1.418638"/>
+<status status="PASS" start="2025-01-31T21:13:32.442193" elapsed="1.605699"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:32.908047" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
-<msg time="2024-12-17T10:21:33.027902" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
-<arg>${interest.${PLATFORM_NAME}.interestList.format(text='${interestName}')}</arg>
+<msg time="2025-01-31T21:13:34.050006" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Technology"]'.</msg>
+<msg time="2025-01-31T21:13:34.354854" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Technology"]</msg>
+<arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:32.907038" elapsed="0.120864"/>
+<status status="PASS" start="2025-01-31T21:13:34.048220" elapsed="0.306759"/>
 </kw>
+<arg>${interest.${PLATFORM_NAME}.interestList.format(text='${interestName}')}</arg>
+<status status="PASS" start="2025-01-31T21:13:32.441126" elapsed="1.913968"/>
+</kw>
+<kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
 <while condition="${True}">
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:33.888383" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2024-12-17T10:21:33.889379" level="INFO">criteria is Next</msg>
+<msg time="2025-01-31T21:13:35.050961" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-01-31T21:13:35.051095" level="INFO">criteria is Next</msg>
 <arg>${locator}</arg>
 <doc>Verifies that element identified with locator is enabled.</doc>
-<status status="PASS" start="2024-12-17T10:21:33.028902" elapsed="0.860477"/>
+<status status="PASS" start="2025-01-31T21:13:34.357244" elapsed="0.693903"/>
 </kw>
-<msg time="2024-12-17T10:21:33.889379" level="INFO">${status} = True</msg>
+<msg time="2025-01-31T21:13:35.051280" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-12-17T10:21:33.028902" elapsed="0.860477"/>
+<status status="PASS" start="2025-01-31T21:13:34.357074" elapsed="0.694230"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-12-17T10:21:33.889379" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-01-31T21:13:35.052043" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-12-17T10:21:33.889379" elapsed="0.001001"/>
+<status status="PASS" start="2025-01-31T21:13:35.051480" elapsed="0.000688"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:33.028902" elapsed="0.861478"/>
+<status status="PASS" start="2025-01-31T21:13:34.356818" elapsed="0.695406"/>
 </iter>
-<status status="PASS" start="2024-12-17T10:21:33.028902" elapsed="0.861478"/>
+<status status="PASS" start="2025-01-31T21:13:34.356816" elapsed="0.695448"/>
 </while>
-<arg>${interest.nextButton}</arg>
+<arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2024-12-17T10:21:33.027902" elapsed="0.862478"/>
+<status status="PASS" start="2025-01-31T21:13:34.356523" elapsed="0.695817"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:33.890380" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2024-12-17T10:21:33.969872" level="INFO">criteria is Next</msg>
-<arg>${interest.nextButton}</arg>
+<msg time="2025-01-31T21:13:35.053804" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-01-31T21:13:35.271299" level="INFO">criteria is Next</msg>
+<arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:33.890380" elapsed="0.079492"/>
+<status status="PASS" start="2025-01-31T21:13:35.052484" elapsed="0.218927"/>
+</kw>
+<arg>${interest.nextButton}</arg>
+<status status="PASS" start="2025-01-31T21:13:34.355378" elapsed="0.916166"/>
 </kw>
 <arg>Technology</arg>
-<status status="PASS" start="2024-12-17T10:21:31.488400" elapsed="2.481472"/>
+<status status="PASS" start="2025-01-31T21:13:32.440614" elapsed="2.830999"/>
 </kw>
 <kw name="Select Looking For" owner="lookingForPage">
+<kw name="Wait Visible And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:35.237599" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<arg>${lookingFor.android.lookingForList.format(param='${lookingForName}')}</arg>
+<msg time="2025-01-31T21:13:36.548604" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]
+xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-12-17T10:21:33.970871" elapsed="1.266728"/>
+<status status="PASS" start="2025-01-31T21:13:35.273711" elapsed="1.275024"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:35.238600" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
-<msg time="2024-12-17T10:21:35.316188" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
-<arg>${lookingFor.android.lookingForList.format(param='${lookingForName}')}</arg>
+<msg time="2025-01-31T21:13:36.550430" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]'.</msg>
+<msg time="2025-01-31T21:13:36.756222" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Professional growth"]</msg>
+<arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:35.237599" elapsed="0.078589"/>
+<status status="PASS" start="2025-01-31T21:13:36.548953" elapsed="0.207379"/>
 </kw>
+<arg>${lookingFor.android.lookingForList.format(param='${lookingForName}')}</arg>
+<status status="PASS" start="2025-01-31T21:13:35.272707" elapsed="1.483966"/>
+</kw>
+<kw name="Wait Enabled And Click Element" owner="customKeywords">
 <kw name="Wait Until Element Is Enabled" owner="customKeywords">
 <while condition="${True}">
 <iter>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Enabled" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:36.144707" level="INFO">Element 'Next' is enabled .</msg>
-<msg time="2024-12-17T10:21:36.144707" level="INFO">criteria is Next</msg>
+<msg time="2025-01-31T21:13:37.426940" level="INFO">Element 'Next' is enabled .</msg>
+<msg time="2025-01-31T21:13:37.427066" level="INFO">criteria is Next</msg>
 <arg>${locator}</arg>
 <doc>Verifies that element identified with locator is enabled.</doc>
-<status status="PASS" start="2024-12-17T10:21:35.317317" elapsed="0.827390"/>
+<status status="PASS" start="2025-01-31T21:13:36.758354" elapsed="0.668762"/>
 </kw>
-<msg time="2024-12-17T10:21:36.144707" level="INFO">${status} = True</msg>
+<msg time="2025-01-31T21:13:37.427245" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Element Should Be Enabled</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-12-17T10:21:35.317317" elapsed="0.827390"/>
+<status status="PASS" start="2025-01-31T21:13:36.758203" elapsed="0.669071"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-12-17T10:21:36.146214" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-01-31T21:13:37.428103" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-12-17T10:21:36.144707" elapsed="0.001507"/>
+<status status="PASS" start="2025-01-31T21:13:37.427462" elapsed="0.000798"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:35.317317" elapsed="0.828897"/>
+<status status="PASS" start="2025-01-31T21:13:36.757965" elapsed="0.670358"/>
 </iter>
-<status status="PASS" start="2024-12-17T10:21:35.317317" elapsed="0.828897"/>
+<status status="PASS" start="2025-01-31T21:13:36.757963" elapsed="0.670403"/>
 </while>
-<arg>${lookingFor.nextButton}</arg>
+<arg>${locator}</arg>
 <timeout value="10 seconds"/>
-<status status="PASS" start="2024-12-17T10:21:35.316188" elapsed="0.830026"/>
+<status status="PASS" start="2025-01-31T21:13:36.757650" elapsed="0.670806"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:36.146736" level="INFO">Clicking element 'Next'.</msg>
-<msg time="2024-12-17T10:21:36.201676" level="INFO">criteria is Next</msg>
-<arg>${lookingFor.nextButton}</arg>
+<msg time="2025-01-31T21:13:37.429671" level="INFO">Clicking element 'Next'.</msg>
+<msg time="2025-01-31T21:13:37.586965" level="INFO">criteria is Next</msg>
+<arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:36.146214" elapsed="0.056460"/>
+<status status="PASS" start="2025-01-31T21:13:37.428626" elapsed="0.158439"/>
+</kw>
+<arg>${lookingFor.nextButton}</arg>
+<status status="PASS" start="2025-01-31T21:13:36.756918" elapsed="0.830257"/>
 </kw>
 <arg>Professional growth</arg>
-<status status="PASS" start="2024-12-17T10:21:33.970871" elapsed="2.231803"/>
+<status status="PASS" start="2025-01-31T21:13:35.272208" elapsed="2.315035"/>
 </kw>
 <kw name="Skip Sing In" owner="signInPage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:37.462134" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]
+<msg time="2025-01-31T21:13:38.888309" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]
 xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]</msg>
 <arg>${signIn.skipButton.format(text='${expectedText}')}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-12-17T10:21:36.202674" elapsed="1.259460"/>
+<status status="PASS" start="2025-01-31T21:13:37.587952" elapsed="1.300489"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:37.463135" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]'.</msg>
-<msg time="2024-12-17T10:21:37.529609" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]</msg>
+<msg time="2025-01-31T21:13:38.890564" level="INFO">Clicking element '//android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]'.</msg>
+<msg time="2025-01-31T21:13:39.047299" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="Typography" and @text="Skip this for now"]</msg>
 <arg>${signIn.skipButton.format(text='${expectedText}')}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-12-17T10:21:37.462134" elapsed="0.067475"/>
+<status status="PASS" start="2025-01-31T21:13:38.888687" elapsed="0.158736"/>
 </kw>
 <arg>Skip this for now</arg>
-<status status="PASS" start="2024-12-17T10:21:36.202674" elapsed="1.326935"/>
+<status status="PASS" start="2025-01-31T21:13:37.587638" elapsed="1.459909"/>
 </kw>
 <kw name="View Home" owner="homePage">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-12-17T10:21:40.724563" level="INFO">criteria is HomeScreen</msg>
+<msg time="2025-01-31T21:13:42.723765" level="INFO">criteria is HomeScreen
+criteria is HomeScreen
+criteria is HomeScreen
+criteria is HomeScreen</msg>
 <arg>${home.homeScreen}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-12-17T10:21:37.530617" elapsed="3.193946"/>
+<status status="PASS" start="2025-01-31T21:13:39.048654" elapsed="3.675218"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:37.530617" elapsed="3.193946"/>
+<status status="PASS" start="2025-01-31T21:13:39.048191" elapsed="3.675799"/>
 </kw>
 <kw name="Close All Applications" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes all open applications.</doc>
-<status status="PASS" start="2024-12-17T10:21:40.724563" elapsed="0.227061"/>
+<status status="PASS" start="2025-01-31T21:13:42.724492" elapsed="0.592363"/>
 </kw>
-<status status="PASS" start="2024-12-17T10:21:20.689378" elapsed="20.298598"/>
+<status status="PASS" start="2025-01-31T21:13:15.906993" elapsed="27.410206"/>
 </test>
-<status status="PASS" start="2024-12-17T10:21:20.487143" elapsed="20.503017"/>
+<status status="PASS" start="2025-01-31T21:13:15.637369" elapsed="27.681436"/>
 </suite>
-<status status="PASS" start="2024-12-17T10:21:20.484605" elapsed="20.506974"/>
+<status status="PASS" start="2025-01-31T21:13:15.635619" elapsed="27.685014"/>
 </suite>
-<status status="PASS" start="2024-12-17T10:21:20.449347" elapsed="20.544651"/>
+<status status="PASS" start="2025-01-31T21:13:15.597328" elapsed="27.725529"/>
 </suite>
 <statistics>
 <total>

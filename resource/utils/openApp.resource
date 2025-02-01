@@ -10,6 +10,6 @@ Open TED App
     ...    platformName=${PLATFORM_NAME}
     ...    deviceName=UIAutomator2  
     ...    automationName=UIAutomator2
-    ...    deviceName=Pixel 4
+    ...    deviceName=Phone API 35
     ...    app=${CURDIR}${/}..${/}app${/}app.apk
     ...    disableIdLocatorAutocompletion=${True}

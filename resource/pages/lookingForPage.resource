@@ -5,8 +5,7 @@ Resource        ../../base.resource
 Select Looking For
     [Arguments]    ${lookingForName}
 
-    Wait Until Element Is Visible    ${lookingFor.android.lookingForList.format(param='${lookingForName}')}
-    Click Element                    ${lookingFor.android.lookingForList.format(param='${lookingForName}')}
+    Wait Visible And Click Element    
+    ...    ${lookingFor.android.lookingForList.format(param='${lookingForName}')}
 
-    Wait Until Element Is Enabled    ${lookingFor.nextButton}
-    Click Element                    ${lookingFor.nextButton}    
+    Wait Enabled And Click Element    ${lookingFor.nextButton}    
