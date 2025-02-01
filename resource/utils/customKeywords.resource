@@ -23,4 +23,13 @@ Wait Enabled And Click Element
     [Arguments]      ${locator}
 
     Wait Until Element Is Enabled    ${locator}
-    Click Element                    ${locator}    
+    Click Element                    ${locator}  
+
+Wait Visible And Input Text
+    [Arguments]         ${locator}     ${text}
+
+    Wait Visible And Click Element    ${locator}
+    
+    Is Keyboard Shown
+
+    Input Text    ${locator}    ${text}
