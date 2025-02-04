@@ -1,6 +1,9 @@
 # 🎥 TED
 
-TED é um aplicativo para realizar pesquisas por temas de vídeos, semelhante ao YouTube. Essas pesquisas são feitas diretamente na plataforma do YouTube.
+TED é um aplicativo para realizar pesquisas por temas de vídeos, semelhante ao YouTube. Essas pesquisas são de paletras sobre determinados assuntos, podendo ser escolhido o tema, e ainda por cima, pesquisar sobre um tema especifico. Nesse repositório poderá encontrar alguns cenários de testes realizado no mesmo, afins educativos.
+
+![image](https://github.com/user-attachments/assets/c0c5f273-3c1f-46bf-bda2-80507596f607)
+
 
 ---
 
@@ -89,3 +92,16 @@ npx appium -pa wd/hub
 ```bash
 robot -d logs .
 ```
+
+## Cobertura de testes:
+
+* [x] Acessar o aplicativo
+  * [x] Selecionar por um tema especifico
+  * [x] Selecionar um autor especifico
+  * [x] Pula a parte de autenticação
+  * [x] Visualizar a home page
+* [x] Pesquisar por um tema especifico
+  * [x] Selecionar o primeiro tema pesquisado
+  * [x] Visualizar o vídeo
+  * [x] Player no vídeo selecionado
+   
