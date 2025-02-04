@@ -12,7 +12,7 @@ Variables    resource/locators/interestLocators.yaml
 Variables    resource/locators/lookingForLocators.yaml
 Variables    resource/locators/homeLocators.yaml
 Variables    resource/locators/signInLocator.yaml
-Variables    resource/locators/resultSearch.yaml
+Variables    resource/locators/resultSearchLocators.yaml
 Variables    resource/locators/searchLocators.yaml
 
 ### Pages
@@ -26,4 +26,5 @@ Resource       resource/pages/resultSearchPage.resource
 
 
 *** Variables ***
-${PLATFORM_NAME}    android
+${PLATFORM_NAME}                android
+${EMULATOR}                     local 

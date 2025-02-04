@@ -54,7 +54,9 @@ Swipe Until Element Is Visible
     ${start_y}  Evaluate  ${y} / 2
 
     WHILE    ${True}
-        ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${locator}  1
+        ${status}    Run Keyword And Return Status    
+        ...          Wait Until Element Is Visible    
+        ...          ${locator}  1
 
         IF    ${status}
             Exit For Loop
