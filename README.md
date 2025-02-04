@@ -1,21 +1,21 @@
-# 🎥 TED  
+# 🎥 TED
 
-TED é um aplicativo para realizar pesquisas por temas de vídeos, semelhante ao YouTube. Essas pesquisas são feitas diretamente na plataforma do YouTube.  
+TED é um aplicativo para realizar pesquisas por temas de vídeos, semelhante ao YouTube. Essas pesquisas são feitas diretamente na plataforma do YouTube.
 
 ---
 
-## ⚙️ Configurações  
+## ⚙️ Configurações
 
 ✅ **Python** versão **3**  
 ✅ **Node.js** versão **22**  
 ✅ **Android Studio**  
-✅ **Appium Inspector**  
+✅ **Appium Inspector**
 
-> 📌 Para abrir o emulador, é necessário ter o **Android Studio** com um emulador criado ou utilizar um dispositivo físico.  
+> 📌 Para abrir o emulador, é necessário ter o **Android Studio** com um emulador criado ou utilizar um dispositivo físico.
 
 ---
 
-### 🏗️ Criação do Ambiente Virtual  
+### 🏗️ Criação do Ambiente Virtual
 
 ```bash
 # Windows
@@ -25,19 +25,33 @@ python -m venv nome_do_ambiente
 python3 -m venv nome_do_ambiente
 ```
 
-> 🔧 Caso o `venv` não esteja instalado no **Linux**, use:  
+> 🔧 Caso o `venv` não esteja instalado no **Linux**, use:
 
 ```bash
 # Debian/Ubuntu
-sudo apt install python3-venv  
+sudo apt install python3-venv
 
 # Fedora
-sudo dnf install python3-venv  
+sudo dnf install python3-venv
+```
+
+#### Instalações
+
+- Instalar configurações do arquivo `requirements.txt
+
+```python
+pip install -r requirements.txt
+```
+
+- instalar dependências do `Node`
+
+```node
+npm install
 ```
 
 ---
 
-### 🚀 Ativação do Ambiente Virtual  
+### 🚀 Ativação do Ambiente Virtual
 
 ```bash
 # Windows - Prompt de Comando (CMD)
@@ -50,7 +64,7 @@ nome_do_ambiente\Scripts\Activate.ps1
 source nome_do_ambiente/bin/activate
 ```
 
-> ⚠️ **Se houver erro no Windows**, execute este comando antes:  
+> ⚠️ **Se houver erro no Windows**, execute este comando antes:
 
 ```bash
 Set-ExecutionPolicy Unrestricted -Scope Process
@@ -58,22 +72,20 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 ---
 
-### ▶️ Execução do Projeto  
+### ▶️ Execução do Projeto
 
-#### 1️⃣ Subir o ambiente do **Appium** que foi instalado localmente  
+- 1️⃣ Subir o ambiente do **Appium** que foi instalado localmente
 
 ```bash
 npx appium -pa wd/hub
 ```
 
-#### 2️⃣ Configuração do **Appium Inspector**  
+- 2️⃣ Configuração do **Appium Inspector**
 
-![Appium Inspector](https://github.com/user-attachments/assets/bd865c43-c577-497b-b683-180256649732)  
+![Appium Inspector](https://github.com/user-attachments/assets/bd865c43-c577-497b-b683-180256649732)
 
-#### 3️⃣ Executar os testes com **Robot Framework**  
+- 3️⃣ Executar os testes com **Robot Framework**
 
 ```bash
 robot -d logs .
 ```
-
-

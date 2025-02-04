@@ -33,3 +33,13 @@ Wait Visible And Input Text
     Is Keyboard Shown
 
     Input Text    ${locator}    ${text}
+
+Access TED APP without Login
+    [Arguments]    ${interest}    ${lookingFor}    ${expected_text}
+
+    Click In Button Cancel
+    Click In Lest Go
+    Select Interest       ${interest}
+    Select Looking For    ${lookingFor}
+    Skip Sing In          ${expected_text} 
+    View Home
